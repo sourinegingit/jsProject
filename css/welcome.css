@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('../img/firstShoes.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.wrapper,.slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide{
+    overflow: hidden;
+
+}
+.slide .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide .image-data{
+    position:absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+}
+@media only screen and (max-width: 900px) {
+    h1,h3,p{
+        top:40%
+    }
+h1{
+    font-size: 3rem;
+}
+    h3{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}

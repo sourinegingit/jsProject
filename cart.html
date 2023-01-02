@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shoea Shop | Cart Page</title>
+
+  <!-- Font awesome -->
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+  <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+  <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+  <!-- Main style sheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <style>
+    td,
+    tr,
+    th {
+      border-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex;flex-direction: column;align-items: center;margin-top:30px;">
+    <h3> shipping address</h3>
+    <div style="display: flex;align-items: center;justify-content: space-between;">
+      <div style="display: flex;gap: 10rem;">
+        <div class="left-ship" style="display: flex;gap: 1rem;width:55%;align-items: center;">
+          <img src="img/asics.png" height="50px" width="50px" style="border-radius: 60%;">
+          <div style="display: flex;flex-direction: column;">
+            <h5 style="margin-right: 11rem; font-weight: bold;">home</h5>
+            <p style="margin-right: 11rem; width: 100%;">61480 subbroke park PC</p>
+          </div>
+        </div>
+        <div class="right-ship" style="display: flex; align-items: center;justify-self:center;gap: 1rem;">
+          <p>edit</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cart view section -->
+  <section id="cart-view">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="cart-view-area">
+            <div class="cart-view-table">
+              <form action="">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody id="orders">
+                      <tr>
+                        <td><a class="remove" href="#">
+                            <fa class="fa fa-close"></fa>
+                          </a></td>
+                        <td><a href="#"><img src="img/4.jpg" alt="img"></a></td>
+                        <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                        <td>$250</td>
+                        <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                        <td>$250</td>
+                      </tr>
+                      <!-- <tr>
+                        <td><a class="remove" href="#">
+                            <fa class="fa fa-close"></fa>
+                          </a></td>
+                        <td><a href="#"><img src="img/14.jpg" alt="img"></a></td>
+                        <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                        <td>$150</td>
+                        <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                        <td>$150</td>
+                      </tr> -->
+                      <!-- <tr>
+                        <td><a class="remove" href="#">
+                            <fa class="fa fa-close"></fa>
+                          </a></td>
+                        <td><a href="#"><img src="img/2.jpg" alt="img"></a></td>
+                        <td><a class="aa-cart-title" href="#">Polo T-Shirt</a></td>
+                        <td>$50</td>
+                        <td><input class="aa-cart-quantity" type="number" value="1"></td>
+                        <td>$50</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6" class="aa-cart-view-bottom">
+                          <div class="aa-cart-coupon">
+                            <input class="aa-coupon-code" type="text" placeholder="Coupon">
+                            <input class="aa-cart-view-btn" type="submit" value="Apply Coupon">
+                          </div>
+                          <input class="aa-cart-view-btn" type="submit" value="Update Cart">
+                        </td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+              <!-- Cart Total view -->
+              <div class="cart-view-total">
+                <h4>choose shipping</h4>
+                <div style="display: flex;gap: 10rem;">
+                  <div class="left-ship" style="display: flex;gap: 1rem;width: 55%;">
+                    <img src="img/asics.png" height="70px" width="60px" style="border-radius: 60%">
+                    <div style="display: flex;flex-direction: column;">
+                      <h5 style="margin-right: 11rem; font-weight: bold;">Regular</h5>
+                      <p style="margin-right: 11rem; width: 100%;">Estimamte ... Dec 20-22</p>
+                    </div>
+                  </div>
+                  <div class="right-ship" style="display: flex; align-items: center;justify-self:center;gap: 1rem;">
+                    <p>$15</p>
+                    <p>edit</p>
+                  </div>
+                </div>
+                <h4>promo code</h4>
+                <div style="display: flex; padding: 3rem 0;gap: 1rem;">
+                  <button
+                    style="border-style: none; border-radius: 2rem; background-color: black;color: white; padding: 10px 15px; margin-right: 1rem;">discount
+                    30%
+                    off x</button>
+                  <button
+                    style="border-style: none;  background-color: black;color: white; padding: 10px; border-radius: 50%;width: 4.3rem; height: 4.3rem;">+</button>
+                </div>
+                <table class="aa-totals-table">
+                  <tbody>
+                    <tr>
+                      <th>amount</th>
+                      <td class="totalprice">$450</td>
+                    </tr>
+                    <tr>
+                      <th>shipping</th>
+                      <td class="totalprice">--</td>
+                    </tr>
+                    <tr>
+                      <th>promo</th>
+                      <td class="totalprice">--</td>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <td class="totalprice">$450</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="payment.html" class="aa-cart-view-btn" style="border-radius: 3rem;">continue to payment</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Cart view section -->
+
+
+
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
+  <!-- Custom js -->
+  <script src="js/custom.js"></script>
+  <script src="js/cart.js"></script>
+
+</body>
+
+</html>
